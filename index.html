@@ -192,7 +192,8 @@ body{font-family:'Instrument Sans',sans-serif;background:var(--paper);color:var(
 
 <!-- TABS -->
 <div class="tabs">
-  <button class="tab active" onclick="switchTab('overview')">Overview</button>
+  <button class="tab active" onclick="switchTab('execsummary')">Executive Summary</button>
+  <button class="tab" onclick="switchTab('overview')">All Roles Overview</button>
   <button class="tab" onclick="switchTab('mena')">MENA Analysis</button>
   <button class="tab" onclick="switchTab('europe-canada')">Europe & Canada</button>
   <button class="tab" onclick="switchTab('compare')">Market Comparison</button>
@@ -200,9 +201,177 @@ body{font-family:'Instrument Sans',sans-serif;background:var(--paper);color:var(
 </div>
 
 <!-- ══════════════════════════════════════════════════════ -->
+<!-- PANEL 0: EXECUTIVE SUMMARY -->
+<!-- ══════════════════════════════════════════════════════ -->
+<div id="panel-execsummary" class="panel active">
+
+  <!-- Purpose -->
+  <div class="exec-panel">
+    <div style="font-family:'Syne',sans-serif;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#787870;margin-bottom:10px">Purpose of this report</div>
+    <div class="exec-lede">Four Principles is hiring Digital Transformation consultants across three seniority levels for Riyadh. This report quantifies the total addressable talent pool across MENA (Arabic-speaking, DT background) and separately across Europe and Canada (DT background, no language filter) to support sourcing planning and stakeholder alignment.</div>
+    <div class="filter-grid">
+      <div class="filter-box"><div class="filter-num" style="color:#5DCAA5">Filter 1 — DT specialisation</div><div class="filter-text">Only <strong>25–30%</strong> of management consultants globally work in Digital Transformation. Strategy, finance, HR, and operations advisory practices are excluded.</div></div>
+      <div class="filter-box"><div class="filter-num" style="color:#85B7EB">Filter 2 — Grade & experience</div><div class="filter-text">Senior Consultants represent <strong>~28%</strong> of consulting headcount; Managers <strong>~18%</strong>; Associate Directors <strong>~10%</strong>. The pyramid narrows sharply at senior levels.</div></div>
+      <div class="filter-box"><div class="filter-num" style="color:#EF9F27">Filter 3 — Arabic fluency (MENA only)</div><div class="filter-text">A large share of MENA DT consultants are non-Arabic-speaking expats. This filter removes <strong>~40–45%</strong> of an otherwise qualified pool — the sharpest single cut in the MENA funnel.</div></div>
+    </div>
+    <div class="reloc-note"><strong>On Riyadh relocation:</strong> Not included as a filter in any geography. No dataset supports a reliable relocation-intent estimate — it depends on family situation, compensation, career stage, and nationality. All numbers represent the <strong>total addressable universe</strong> of qualifiable candidates. Whether they are open to Riyadh is assessed per individual during sourcing outreach.</div>
+  </div>
+
+  <!-- MENA numbers -->
+  <div class="slbl">MENA — three roles, Arabic-speaking, DT consulting background</div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:10px">
+    <div class="role-card sc">
+      <div class="role-tag sc">Senior Consultant</div>
+      <div class="role-exp">3+ years · DT · Arabic speaker</div>
+      <div class="pool-num">850–1,250</div>
+      <div class="pool-lbl">Total addressable universe (MENA)</div>
+      <hr class="divider">
+      <div class="stat-row"><span class="stat-lbl">Starting base (all MENA consultants)</span><span class="stat-val">~24,000</span></div>
+      <div class="stat-row"><span class="stat-lbl">After DT filter (27.5%)</span><span class="stat-val">~6,500</span></div>
+      <div class="stat-row"><span class="stat-lbl">After grade filter (28%)</span><span class="stat-val">~1,800</span></div>
+      <div class="stat-row"><span class="stat-lbl">After Arabic filter (58%)</span><span class="stat-val" style="color:var(--sc)">850–1,250</span></div>
+      <hr class="divider">
+      <div class="stat-row"><span class="stat-lbl">Est. time to hire</span><span class="stat-val">45–60 days</span></div>
+      <div class="diff-badge diff-mod">Moderate difficulty</div>
+    </div>
+    <div class="role-card mg">
+      <div class="role-tag mg">Manager</div>
+      <div class="role-exp">5+ years · DT · Arabic speaker</div>
+      <div class="pool-num">500–800</div>
+      <div class="pool-lbl">Total addressable universe (MENA)</div>
+      <hr class="divider">
+      <div class="stat-row"><span class="stat-lbl">Starting base (all MENA consultants)</span><span class="stat-val">~24,000</span></div>
+      <div class="stat-row"><span class="stat-lbl">After DT filter (27.5%)</span><span class="stat-val">~6,500</span></div>
+      <div class="stat-row"><span class="stat-lbl">After grade filter (18%)</span><span class="stat-val">~1,150</span></div>
+      <div class="stat-row"><span class="stat-lbl">After Arabic filter (57%)</span><span class="stat-val" style="color:var(--mg)">500–800</span></div>
+      <hr class="divider">
+      <div class="stat-row"><span class="stat-lbl">Est. time to hire</span><span class="stat-val">60–75 days</span></div>
+      <div class="diff-badge diff-hi">High difficulty</div>
+    </div>
+    <div class="role-card ad">
+      <div class="role-tag ad">Associate Director</div>
+      <div class="role-exp">7+ years · DT · Arabic speaker</div>
+      <div class="pool-num">270–500</div>
+      <div class="pool-lbl">Total addressable universe (MENA)</div>
+      <hr class="divider">
+      <div class="stat-row"><span class="stat-lbl">Starting base (all MENA consultants)</span><span class="stat-val">~24,000</span></div>
+      <div class="stat-row"><span class="stat-lbl">After DT filter (27.5%)</span><span class="stat-val">~6,500</span></div>
+      <div class="stat-row"><span class="stat-lbl">After grade filter (10%)</span><span class="stat-val">~650</span></div>
+      <div class="stat-row"><span class="stat-lbl">After Arabic filter (57%)</span><span class="stat-val" style="color:var(--ad)">270–500</span></div>
+      <hr class="divider">
+      <div class="stat-row"><span class="stat-lbl">Est. time to hire</span><span class="stat-val">75–90 days</span></div>
+      <div class="diff-badge diff-vhi">Very high difficulty</div>
+    </div>
+  </div>
+
+  <!-- MENA sourcing one-liners -->
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:32px">
+    <div class="i-tip sc" style="border-radius:var(--r);padding:12px 14px"><strong>SC sourcing:</strong> Target 3–4 yr consultants at Big 4 / Accenture in UAE or Egypt awaiting promotion. No-travel-required resonates strongly. UAE and Egypt are the highest-mobility feeder markets.</div>
+    <div class="i-tip mg" style="border-radius:var(--r);padding:12px 14px"><strong>Manager sourcing:</strong> Demand outpaces supply by ~30% in GCC. Job boards are insufficient — direct LinkedIn outreach + referrals from existing KSA client networks converts 3–4× better than cold outreach.</div>
+    <div class="i-tip ad" style="border-radius:var(--r);padding:12px 14px"><strong>AD sourcing:</strong> Entirely passive market — headhunt only. Many Arabic-speaking ADs have moved in-house to CDO/VP DT roles at Saudi corporates. Lead every conversation with the no-travel-required differentiator.</div>
+  </div>
+
+  <!-- Europe & Canada numbers -->
+  <div class="slbl">Europe & Canada — Manager and Associate Director, DT background, no language filter</div>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:10px">
+    <div class="role-card eu">
+      <div class="role-tag eu">Manager — Europe</div>
+      <div class="role-exp">5+ yrs · DT · No language filter</div>
+      <div class="pool-num" style="font-size:22px">19,000–23,000</div>
+      <div class="pool-lbl">Total addressable universe</div>
+      <hr class="divider">
+      <div class="stat-row"><span class="stat-lbl">Base (~$107B market)</span><span class="stat-val">~428,000</span></div>
+      <div class="stat-row"><span class="stat-lbl">After DT + grade filters</span><span class="stat-val" style="color:var(--eu)">19,000–23,000</span></div>
+      <hr class="divider">
+      <div class="stat-row"><span class="stat-lbl">Key markets</span><span class="stat-val">UK, Germany, France</span></div>
+    </div>
+    <div class="role-card eu">
+      <div class="role-tag eu">Assoc. Director — Europe</div>
+      <div class="role-exp">7+ yrs · DT · No language filter</div>
+      <div class="pool-num" style="font-size:22px">10,500–13,000</div>
+      <div class="pool-lbl">Total addressable universe</div>
+      <hr class="divider">
+      <div class="stat-row"><span class="stat-lbl">Base (~$107B market)</span><span class="stat-val">~428,000</span></div>
+      <div class="stat-row"><span class="stat-lbl">After DT + grade filters</span><span class="stat-val" style="color:var(--eu)">10,500–13,000</span></div>
+      <hr class="divider">
+      <div class="stat-row"><span class="stat-lbl">Key markets</span><span class="stat-val">UK, Germany, France</span></div>
+    </div>
+    <div class="role-card ca">
+      <div class="role-tag ca">Manager — Canada</div>
+      <div class="role-exp">5+ yrs · DT · No language filter</div>
+      <div class="pool-num" style="font-size:22px">2,000–2,600</div>
+      <div class="pool-lbl">Total addressable universe</div>
+      <hr class="divider">
+      <div class="stat-row"><span class="stat-lbl">Base (~$12B market)</span><span class="stat-val">~48,000</span></div>
+      <div class="stat-row"><span class="stat-lbl">After DT + grade filters</span><span class="stat-val" style="color:var(--ca)">2,000–2,600</span></div>
+      <hr class="divider">
+      <div class="stat-row"><span class="stat-lbl">Key market</span><span class="stat-val">Ontario (Toronto)</span></div>
+    </div>
+    <div class="role-card ca">
+      <div class="role-tag ca">Assoc. Director — Canada</div>
+      <div class="role-exp">7+ yrs · DT · No language filter</div>
+      <div class="pool-num" style="font-size:22px">1,200–1,400</div>
+      <div class="pool-lbl">Total addressable universe</div>
+      <hr class="divider">
+      <div class="stat-row"><span class="stat-lbl">Base (~$12B market)</span><span class="stat-val">~48,000</span></div>
+      <div class="stat-row"><span class="stat-lbl">After DT + grade filters</span><span class="stat-val" style="color:var(--ca)">1,200–1,400</span></div>
+      <hr class="divider">
+      <div class="stat-row"><span class="stat-lbl">Key market</span><span class="stat-val">Ontario (Toronto)</span></div>
+    </div>
+  </div>
+
+  <!-- EU/CA combined + note -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:32px">
+    <div style="background:var(--mg2);border-radius:var(--r);padding:16px 20px;border:1px solid #c9d8ee">
+      <div style="font-family:'Syne',sans-serif;font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--mg3);margin-bottom:6px">Manager — Europe + Canada combined</div>
+      <div style="font-family:'Syne',sans-serif;font-size:32px;font-weight:700;color:var(--mg)">21,000–26,000</div>
+      <div style="font-size:12px;color:var(--mg3);margin-top:4px">~36× larger than the MENA Manager pool</div>
+    </div>
+    <div style="background:var(--ad2);border-radius:var(--r);padding:16px 20px;border:1px solid #e4c89a">
+      <div style="font-family:'Syne',sans-serif;font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ad3);margin-bottom:6px">Assoc. Director — Europe + Canada combined</div>
+      <div style="font-family:'Syne',sans-serif;font-size:32px;font-weight:700;color:var(--ad)">12,000–14,000</div>
+      <div style="font-size:12px;color:var(--ad3);margin-top:4px">~34× larger than the MENA AD pool</div>
+    </div>
+  </div>
+
+  <!-- Pool comparison chart -->
+  <div class="slbl">Full picture — all pools side by side</div>
+  <div class="chart-card" style="margin-bottom:32px">
+    <div class="chart-title">Total addressable universe — all roles & geographies</div>
+    <div class="chart-sub">Log scale — enables MENA and Europe to be shown on the same axis. Hover for exact figures.</div>
+    <div class="legend">
+      <span class="legend-item"><span class="ldot" style="background:#1D9E75"></span>MENA SC</span>
+      <span class="legend-item"><span class="ldot" style="background:#1a5fa8"></span>MENA Manager</span>
+      <span class="legend-item"><span class="ldot" style="background:#b87016"></span>MENA Assoc. Director</span>
+      <span class="legend-item"><span class="ldot" style="background:#6b3fa0"></span>Europe</span>
+      <span class="legend-item"><span class="ldot" style="background:#b83232"></span>Canada</span>
+    </div>
+    <div style="position:relative;height:280px"><canvas id="execChart" role="img" aria-label="Bar chart: MENA SC 1050, MENA Mgr 650, MENA AD 385, Europe Mgr 21000, Europe AD 11750, Canada Mgr 2300, Canada AD 1300">All pools</canvas></div>
+  </div>
+
+  <!-- Key takeaways -->
+  <div class="slbl">Key takeaways for sourcing planning</div>
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:8px">
+    <div class="full-card" style="margin-bottom:0;border-left:3px solid var(--sc)">
+      <div style="font-family:'Syne',sans-serif;font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--sc);margin-bottom:8px">MENA is tight but targeted</div>
+      <div style="font-size:12px;color:var(--ink2);line-height:1.7">The Arabic fluency requirement cuts the MENA pool to 270–1,250 depending on grade. These are small, highly contested pools — especially at AD level where it is a passive, headhunt-only market. Direct sourcing through LinkedIn and existing KSA networks is essential.</div>
+    </div>
+    <div class="full-card" style="margin-bottom:0;border-left:3px solid var(--eu)">
+      <div style="font-family:'Syne',sans-serif;font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--eu);margin-bottom:8px">Europe is large but harder to convert</div>
+      <div style="font-size:12px;color:var(--ink2);line-height:1.7">Dropping the Arabic filter exposes a pool 35× bigger in Europe. But London-to-Riyadh or Amsterdam-to-Riyadh is a more significant relocation ask than UAE-to-KSA. Compensation packaging and the no-travel proposition become the primary conversion levers.</div>
+    </div>
+    <div class="full-card" style="margin-bottom:0;border-left:3px solid var(--ink3)">
+      <div style="font-family:'Syne',sans-serif;font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:8px">Relocation cannot be modelled</div>
+      <div style="font-size:12px;color:var(--ink2);line-height:1.7">No market data can tell us what share of these candidates would move to Riyadh. That is an individual conversation, not a filter. The numbers here are the universe of qualifiable people — conversion rates emerge from outreach, not from market sizing.</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ══════════════════════════════════════════════════════ -->
 <!-- PANEL 1: OVERVIEW -->
 <!-- ══════════════════════════════════════════════════════ -->
-<div id="panel-overview" class="panel active">
+<div id="panel-overview" class="panel">
 
   <!-- Exec Summary -->
   <div class="exec-panel">
@@ -665,8 +834,8 @@ body{font-family:'Instrument Sans',sans-serif;background:var(--paper);color:var(
 
 <script>
 function switchTab(name){
+  const names=['execsummary','overview','mena','europe-canada','compare','methodology'];
   document.querySelectorAll('.tab').forEach((t,i)=>{
-    const names=['overview','mena','europe-canada','compare','methodology'];
     t.classList.toggle('active',names[i]===name);
   });
   document.querySelectorAll('.panel').forEach(p=>{
@@ -679,6 +848,25 @@ Chart.defaults.font.family="'Instrument Sans',sans-serif";
 Chart.defaults.color='#787870';
 
 function buildCharts(){
+  // Exec summary chart
+  new Chart(document.getElementById('execChart'),{
+    type:'bar',
+    data:{
+      labels:['MENA SC','MENA Mgr','MENA AD','Europe Mgr','Europe AD','Canada Mgr','Canada AD'],
+      datasets:[{
+        data:[1050,650,385,21000,11750,2300,1300],
+        backgroundColor:['#1D9E75','#1a5fa8','#b87016','#6b3fa0','#6b3fa0','#b83232','#b83232'],
+        borderWidth:0,borderRadius:4
+      }]
+    },
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>' ~'+c.parsed.y.toLocaleString()+' candidates'}}},
+      scales:{
+        y:{type:'logarithmic',grid:{color:'rgba(0,0,0,0.05)'},ticks:{font:{size:10},callback:v=>{if(v===100||v===1000||v===10000||v===100000)return v>=1000?v/1000+'k':v;return null;}}},
+        x:{grid:{display:false},ticks:{font:{size:10}}}
+      }
+    }
+  });
   // Overview chart
   new Chart(document.getElementById('overviewChart'),{
     type:'bar',
@@ -710,7 +898,6 @@ function buildCharts(){
       scales:{y:{beginAtZero:true,grid:{color:'rgba(0,0,0,0.05)'},ticks:{font:{size:10},callback:v=>v>=1000?v/1000+'k':v}},x:{grid:{display:false},ticks:{font:{size:10}}}}}
   });
 }
-// Build overview chart on load since it's on the first tab
 window.addEventListener('load',()=>{buildCharts();window.chartsBuilt=true;});
 </script>
 </body>
